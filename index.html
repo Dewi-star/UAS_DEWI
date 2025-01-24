@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjualan Sepatu</title>
+    <link rel="stylsheet" href="style.CSS">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Header Styles */
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/api/placeholder/1200/200');
+            height: 700px;
+            background-position: center;
+            background-size: cover;
+            color: pink;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1a5f7a;
+            padding: 1em;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            list-style: none;
+        }
+
+        nav a {
+            color: White;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: pink;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+
+        .section {
+            margin-bottom: 4em;
+        }
+
+        .section h2 {
+            color: #1a5f7a;
+            margin-bottom: 1em;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        /* Info Cards */
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+        }
+
+        .info-card {
+            background-color: pink;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5em;
+        }
+
+        .card-content h3 {
+            color: #1a5f7a;
+            margin-bottom: 0.5em;
+        }
+
+        .card-content p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Facilities Section */
+        .facilities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1em;
+            text-align: center;
+        }
+
+        .facility {
+            padding: 1em;
+            background-color: pink;
+            border-radius: 8px;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            background-color: lavender;
+            padding: 2em;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 1em 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 2em;
+            margin-top: 3em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 800px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .info-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+    <img src="logo.png" width = 900px>
+        
+        </div>
+
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#Tentang Sepatu">Tentang Sepatu</a></li>
+            <li><a href="#Brand">Brand Sepatu</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="tentang" class="section">
+            <h2>Tentang Sepatu</h2>
+            <div class="info-cards">
+                <article class="info-card">
+                    <img src="sepp.jpg">
+                    <div class="card-content">
+                        <h3>Kualitas Sepatu</h3>
+                        <p>Sepatu Korea import dikenal dengan kualitas premium yang menggabungkan desain inovatif, material berkualitas tinggi, dan keunggulan teknologi. Produsen sepatu Korea mengutamakan detail jahitan, penggunaan bahan pilihan seperti kulit berkualitas atau bahan sintetis canggih, serta konsep desain yang mengacu pada tren fashion mutakhir.
+Keistimewaan utama terletak pada kombinasi estetika dan kenyamanan. Sepatu dirancang dengan memperhatikan ergonomi, memiliki sol yang nyaman, ringan, dan mendukung pergerakan kaki secara optimal. Variasi model sangat beragam, mulai dari sneakers urban, sepatu casual, formal, hingga sepatu olahraga dengan teknologi canggih. </p>
+                    </div>
+                </article>
+
+                <article class="info-card">
+                    <img src="import.jpg">
+                    <div class="card-content">
+                        <h3>Berbagai Pilihan Sepatu</h3>
+                        <p>Sepatu kets tersebut memiliki desain yang tebal dan tebal dengan sol yang tebal dan bagian atas yang bertekstur dalam berbagai palet warna, terutama dalam nuansa putih, merah muda, dan krem.
+<P>Gaya sepatu kets utama meliputi:</P>
+<P>1. Sepatu kets rendah yang tebal</P>
+<P>2. Sepatu kets tinggi dengan sol tengah yang dilebih-lebihkan</P>
+<P>3. Platform dengan sol besar dan bergelombang</P>
+<P>Sepatu kets ini tampaknya memiliki estetika khas streetwear atau athleisure, memadukan mode dan fungsi. Desain yang tebal dan bertekstur memberikan tampilan unik dan menarik pada sepatu ini. </p>
+                    </div>
+                </article>
+
+                <article class="info-card">
+                    <img src="huhu.jpg">
+                    <div class="card-content">
+                        <h3>Harga Sepatu</h3>
+                        <p> Harga sepatu impor Korea bisa bervariasi tergantung merek, tipe, dan tempat di mana kamu membelinya. Berikut ini perkiraan harga untuk beberapa merek sepatu populer yang berasal dari atau sering tersedia di Korea:</p>
+
+<p>1. FILA</p>
+<p>-Harga sepatu casual atau lifestyle: sekitar Rp 700.000 - Rp 2.500.000</p>
+<p>-Harga sepatu olahraga (seperti model running atau training): sekitar Rp 900.000 - Rp 3.000.000</p>
+<p>2. Skechers Korea</p>
+<p>-Harga sepatu casual: sekitar Rp 800.000 - Rp 2.500.000</p>
+<p>-Harga sepatu olahraga atau performance: sekitar Rp 1.000.000 - Rp 3.500.000</p>
+<p>3. VANS Korea</p>
+<p>-Harga sepatu sneakers: sekitar Rp 600.000 - Rp 2.000.000</p>
+<p>-Harga sepatu edisi kolaborasi atau edisi terbatas: sekitar Rp 1.500.000 - Rp 3.500.000</p>
+<p>4. HERA</p>
+<p>Harga sepatu casual dan modis: sekitar Rp 1.200.000 - Rp 3.000.000</p>
+<p>5. K-Swiss</p>
+<p>Harga sepatu kasual atau tenis: sekitar Rp 900.000 - Rp 2.500.000</p>
+</p>6. I.T</p>
+<p>Harga sepatu streetwear atau kasual: sekitar Rp 1.000.000 - Rp 3.500.000</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="fasilitas" class="section">
+            <h2>Brand Sepatu</h2>
+            <div class="facilities">
+                <div class="facility">
+                    <h3>FILA Dan K-Swiss</h3>
+                    <p>Meski asalnya sudah lebih lama, FILA tetap memiliki banyak koleksi sepatu yang stylish dan nyaman, baik untuk olahraga maupun gaya sehari-hari.</p>
+<p> K-Swiss adalah merek sepatu yang awalnya dikenal dengan desain sepatu tenis, namun kini telah berkembang menjadi merek yang juga memproduksi sepatu kasual dan lifestyle. Kualitas sepatu K-Swiss biasanya diakui karena Kenyamanan, Desain, dan Harga</p>
+                </div>
+                <div class="facility">
+                    <h3>Skechers Korea </h3>
+                    <p>Merek yang dikenal dengan kenyamanan dan teknologi sol sepatu ini juga cukup populer di Korea, meski Skechers sendiri bukan brand asli Korea, tapi mereka sangat dominan di pasar sana.</p>
+                </div>
+                <div class="facility">
+                    <h3>VANS Korea Dan I.T</h3>
+                    <p>Walaupun VANS berasal dari Amerika, versi yang dijual di Korea sering kali menghadirkan desain dan model yang terinspirasi oleh tren Korea.</p>
+<p>I.T adalah merek yang lebih sering dianggap sebagai bagian dari dunia fashion, terutama dengan gaya streetwear dan trendi. Merek ini banyak berfokus pada desain yang lebih avant-garde dan sering kali mencampurkan elemen fashion dengan fungsionalitas.</p>
+                </div>
+                <div class="facility">
+                    <h3>HERA</h3>
+                    <p>Merek sepatu ini lebih fokus pada produk yang bergaya kasual dan modern, sering kali mencampurkan elemen tradisional dengan tren kontemporer.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="section">
+            <h2>Informasi Kontak</h2>
+            <div class="contact-info">
+                <p>📍 Padarincang City, Kecamatan Padarincang, Kabupaten Serang</p>
+                <p>📱 +62-865-6750-1213</p>
+                <p>⏰ Buka: Senin - Minggu (08.00 - 16.00 WIB)</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Toko Penjualan Sepatu Import Purnama.</p>
+    </footer>
+</body>
+</html>
